@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #3c6e71;
+}
+
+h1, h2{
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+h3 {
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.cabecalho {
+    margin: 20px;
+}
+
+.search__box {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 400px;
+    margin: 20px;
+}
+
+.search__input {
+    border: 2px solid black ;
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.search__icon {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.filtro {
+    margin: 20px;
+}
+
+.filtro__box {
+    display: flex;
+}
+
+.filtro__icon {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.filtro__botao {
+    width: 120px;
+    margin: 20px;
+    font-weight: 700;
+    align-items:center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cards__hotel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hotel {
+    text-align: center;
+    margin-top: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+}
+  
+.hotel:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.hotel__info {
+    margin-top: 10px;
+    padding: 2px 16px;
+    text-align: left;
+}
+
+.img__hotel {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+.estrelas label i.fa{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}
+
+.link__hotel {
+    width: 120px;
+    margin: 10px 150px 10px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.rodape {
+    height: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px){
+    html {
+        font-size: 14px;
+    }
+    .search__box {
+        width: 200px;
+    }  
+}
+@media (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
+
